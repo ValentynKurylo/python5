@@ -23,12 +23,12 @@ class Prince:
 
 
 class Cinderella:
+    count: int = 0
     def __init__(self, name:str, age:int, size:int):
         self.name = name
         self.age = age
         self.size = size
-    count:int = 0
-    count+=1
+        Cinderella.count += 1
 
 
 
@@ -39,4 +39,5 @@ Olga = Cinderella('Olga', 24, 40)
 Olena = Cinderella('Olena', 20, 37)
 
 Ivan.found([Vika, Olga])
+print(Olena.count)
 
